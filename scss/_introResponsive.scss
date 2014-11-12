@@ -1,0 +1,92 @@
+@media screen and (max-width: 1025px) {
+
+	.m-display { display: block; }
+	.m-hidden { display: none; top: 0px; }
+	.container {
+		width: 100%;
+		overflow: hidden;
+	}
+
+	.footer { 
+		height: auto;
+		text-align: center; 
+		padding: 10px 0 15px 0;
+	}
+	.logo-list, .copyright-claim {
+		display: block;
+		margin: 0 auto;
+		@include clearfix();
+	}
+	.copyright-declaim {
+		bottom: 5px;
+		line-height: 20px;
+		margin: 0 30px;
+	}
+
+	// OTHER CUSOTMIZATION
+	.jumbotron { display: none; }
+	.jumbotron-m {
+		font-size: 26px;
+		line-height: 60px;
+		background-size: auto 60px;
+		background: url(../img/si_header_m.jpg) repeat-x;
+		color: $activeGreen;
+		text-shadow: 1px 2px 1px #000;
+	}
+	.nav-list {
+		font-size: 22px;
+		li {
+			a { 
+				line-height: 44px;
+				padding: 0px 10px;;
+			}
+		}
+	}
+	h2 {
+		font-size: 18px;
+		line-height: 35px;
+	}
+	.img-progress { display: none; }
+	.img-progress-m {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		width: 60%;
+		height: auto;
+	}
+	.warning {
+		padding: 15px;
+		ol, .img-warning { float: none; }
+		ol {
+			width: 90%;
+			margin-bottom: 15px;
+		}
+		.img-warning {
+			width: 100%;
+		}
+	}
+
+} 
+
+@media screen and (orientation:portrait) and (max-width: 1025px)  {
+	.nav {
+		position: fixed;
+		top: 0px;
+		width: 100%;
+	}
+}
+@media screen and (orientation:portrait) and (max-width: 935px) {
+
+	h2:first-of-type { margin-top: 104px; }
+}
+
+
+// @media screen and (max-width: 360px) {
+
+// 	.nav-list li a {padding: 0 10px; }
+// 	.img-progress-m {  width: 85%; }
+// 	h2 {
+// 		font-size: 14px;
+// 		line-height: 28px;
+// 	}
+
+// } 

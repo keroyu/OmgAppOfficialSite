@@ -1,0 +1,360 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "微軟正黑體", Arial;
+  background: url(../img/bg_dot.gif) repeat;
+}
+
+.container {
+  width: 960px;
+}
+
+.btn-gotop {
+  z-index: 99;
+  cursor: pointer;
+  width: 99px;
+  height: 98px;
+  background: url(../img/gotop.png) no-repeat center;
+  position: absolute;
+  margin-left: 965px;
+}
+
+/*  PUBLIC CLASS */
+.sprite {
+  float: left;
+  position: relative;
+  height: 0px;
+}
+.sprite span, .sprite h1 {
+  display: inline-block;
+}
+
+.btn {
+  display: inline-block;
+}
+
+.hidden-text {
+  text-indent: -9999px;
+}
+
+.text-center, .content .container {
+  text-align: center;
+}
+.text-center > *, .content .container > * {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.m-display {
+  display: none;
+}
+
+.footer {
+  height: 120px;
+  overflow: hidden;
+  background: #fff;
+  padding: 40px 0 0 0;
+}
+
+.logo-list, .copyright-declaim {
+  display: inline-block;
+}
+
+.logo-list {
+  width: 314px;
+  height: 80px;
+  background: url(../img/footer_logos.png) no-repeat center;
+  text-align: left;
+}
+.logo-list li {
+  display: inline-block;
+}
+.logo-list a {
+  display: inline-block;
+}
+.logo-list a.logo-omg, .logo-list a.logo-macrowell {
+  width: 85px;
+  height: 80px;
+}
+.logo-list a.logo-me2 {
+  width: 132px;
+  height: 80px;
+}
+
+.copyright-declaim {
+  font-size: 13px;
+  color: #555;
+  position: relative;
+  bottom: 30px;
+  left: 15px;
+}
+
+.header {
+  background: #fff;
+}
+
+.jumbotron {
+  background: url(../img/si_header_w.jpg) center top no-repeat;
+  margin-bottom: 25px;
+}
+.jumbotron .container {
+  height: 450px;
+  background: url(../img/si_header_w.jpg) center top no-repeat;
+}
+
+.nav {
+  background: #000;
+}
+
+.nav-list {
+  text-align: center;
+  font-size: 22px;
+}
+.nav-list li {
+  display: inline-block;
+}
+.nav-list li a {
+  display: inline-block;
+  padding: 0 35px;
+  line-height: 55px;
+}
+.nav-list li a:link, .nav-list li a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+.nav-list li.active a, .nav-list li:hover a {
+  color: #e1ff03;
+}
+
+h2 {
+  text-align: center;
+  background: #8b8b8b;
+  font-size: 22px;
+  line-height: 55px;
+  color: #fff;
+}
+
+.btn-gotop {
+  display: none;
+}
+
+.content {
+  text-align: center;
+  display: none;
+}
+.content.active {
+  display: block;
+}
+.content .container {
+  margin: 0 auto;
+}
+
+.img-progress {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-position: center top;
+}
+.img-progress.img-progress-sizeA {
+  width: 960px;
+  height: 305px;
+}
+.img-progress.img-progress-sizeB {
+  width: 716px;
+  height: 546px;
+}
+.img-progress.img-progress-sizeC {
+  width: 960px;
+  height: 329px;
+}
+.img-progress.img-progress-1 {
+  background: url(../img/si_img1_w.png) no-repeat;
+}
+.img-progress.img-progress-2 {
+  background: url(../img/si_img2_w.png) no-repeat;
+}
+.img-progress.img-progress-4 {
+  background: url(../img/si_img4_w.png) no-repeat;
+}
+.img-progress.img-progress-5 {
+  background: url(../img/si_img5_w.png) no-repeat;
+}
+.img-progress.img-progress-7 {
+  background: url(../img/si_img7_w.png) no-repeat;
+}
+.img-progress.img-progress-8 {
+  background: url(../img/si_img8_w.png) no-repeat;
+}
+
+.warning {
+  background: #8b8b8b;
+  text-align: left;
+  padding: 20px 0 0 25px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 28px;
+  overflow: hidden;
+}
+.warning a {
+  margin: 0 2px;
+}
+.warning a:link, .warning a:visited {
+  color: #ffbc00;
+  text-decoration: none;
+}
+.warning ol, .warning .img-warning {
+  float: left;
+}
+.warning ol {
+  width: 440px;
+  margin-left: 25px;
+}
+.warning ol li {
+  list-style-type: decimal;
+}
+
+@media screen and (max-width: 1025px) {
+  .m-display {
+    display: block;
+  }
+
+  .m-hidden {
+    display: none;
+    top: 0px;
+  }
+
+  .container {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .footer {
+    height: auto;
+    text-align: center;
+    padding: 10px 0 15px 0;
+  }
+
+  .logo-list, .copyright-claim {
+    display: block;
+    margin: 0 auto;
+  }
+  .logo-list:before, .logo-list:after, .copyright-claim:before, .copyright-claim:after {
+    content: "";
+    display: table;
+  }
+  .logo-list:after, .copyright-claim:after {
+    clear: both;
+  }
+
+  .copyright-declaim {
+    bottom: 5px;
+    line-height: 20px;
+    margin: 0 30px;
+  }
+
+  .jumbotron {
+    display: none;
+  }
+
+  .jumbotron-m {
+    font-size: 26px;
+    line-height: 60px;
+    background-size: auto 60px;
+    background: url(../img/si_header_m.jpg) repeat-x;
+    color: #e1ff03;
+    text-shadow: 1px 2px 1px #000;
+  }
+
+  .nav-list {
+    font-size: 22px;
+  }
+  .nav-list li a {
+    line-height: 44px;
+    padding: 0px 10px;
+  }
+
+  h2 {
+    font-size: 18px;
+    line-height: 35px;
+  }
+
+  .img-progress {
+    display: none;
+  }
+
+  .img-progress-m {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 60%;
+    height: auto;
+  }
+
+  .warning {
+    padding: 15px;
+  }
+  .warning ol, .warning .img-warning {
+    float: none;
+  }
+  .warning ol {
+    width: 90%;
+    margin-bottom: 15px;
+  }
+  .warning .img-warning {
+    width: 100%;
+  }
+}
+@media screen and (orientation: portrait) and (max-width: 1025px) {
+  .nav {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+  }
+}
+@media screen and (orientation: portrait) and (max-width: 935px) {
+  h2:first-of-type {
+    margin-top: 104px;
+  }
+}

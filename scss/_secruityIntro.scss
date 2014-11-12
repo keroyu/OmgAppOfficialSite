@@ -1,0 +1,85 @@
+.header { background: #fff; }
+.jumbotron {
+	background: url(../img/si_header_w.jpg) center top no-repeat;
+	margin-bottom: 25px;
+	.container {
+		height: 450px;
+		background: url(../img/si_header_w.jpg) center top no-repeat;
+	}
+}
+.nav { background: #000; }
+.nav-list {
+	text-align: center;
+	font-size: 22px;
+	li {
+		display: inline-block;
+		a {
+			display: inline-block;
+			padding: 0 35px;
+			line-height: 55px;
+			&:link, &:visited { color: #fff; text-decoration: none; }
+		}
+		&.active, &:hover { 
+			a{ color: $activeGreen; } 
+		}
+	}
+}
+h2 {
+	text-align: center;
+	background: $bggrey2;
+	font-size: 22px;
+	line-height: 55px;
+	color: #fff;
+}
+
+.btn-gotop { display: none; }
+
+.content {
+	text-align: center;
+	display: none;
+	&.active { display: block; }
+	.container {
+		margin: 0 auto; 
+		@extend .text-center;
+	}
+}
+.img-progress { 
+	margin-top: 30px; 
+	margin-bottom: 30px;
+	background-position: center top;
+	&.img-progress-sizeA { width: 960px; height: 305px; }
+	&.img-progress-sizeB { width: 716px; height: 546px; }
+	&.img-progress-sizeC { width: 960px; height: 329px; }
+	
+	&.img-progress-1 { background: url(../img/si_img1_w.png) no-repeat; }
+	&.img-progress-2 { background: url(../img/si_img2_w.png) no-repeat; }
+	&.img-progress-4 { background: url(../img/si_img4_w.png) no-repeat; }
+	&.img-progress-5 { background: url(../img/si_img5_w.png) no-repeat; }
+	&.img-progress-7 { background: url(../img/si_img7_w.png) no-repeat; }
+	&.img-progress-8 { background: url(../img/si_img8_w.png) no-repeat; }
+}
+
+.warning {
+	background: $bggrey2;
+	text-align: left;
+	padding: 20px 0 0 25px;
+	color: #fff;
+	font-size: 18px;
+	line-height: 28px;
+	overflow: hidden;
+	a {
+		margin: 0 2px;
+		&:link, &:visited { 
+			color: #ffbc00; 
+			text-decoration: none;
+		}
+	}
+	ol, .img-warning { float: left; }
+	ol {
+		width: 440px;
+		margin-left: 25px;
+		li {
+			list-style-type: decimal;
+		}
+	}
+}
